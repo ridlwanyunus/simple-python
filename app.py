@@ -20,4 +20,4 @@ def video():
     return Response(gen(VideoMask()),mimetype='multipart/x-mixed-replace; boundary=frame')
 
 
-app.run(debug=True)
+app.run(debug=True,ssl_context='adhoc')
